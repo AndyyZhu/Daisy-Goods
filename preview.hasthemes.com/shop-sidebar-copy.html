@@ -38,19 +38,6 @@
     <link href="jquery/css/style.css" rel="stylesheet">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <link rel="stylesheet" type="text/css" href="jquery/jquery.multiselect.css" />
-    <style type="text/css">
-        ul,
-        li {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-        }
-
-        .label {
-            color: #000;
-            font-size: 16px;
-        }
-    </style>
 
     <!-- Modernizr JS -->
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
@@ -254,24 +241,9 @@
                             <!-- Start Range -->
                             <div class="htc-grid-range">
                                 <h4 class="section-title-4">FILTER BY PRICE</h4>
-                                <div class="content-shopby">
-                                    <div class="price_filter s-filter clear">
-                                        <form action="shop-sidebar.html#" method="GET">
-                                            <div id="slider-range"></div>
-                                            <div class="slider__range--output">
-                                                <div class="price__output--wrap">
-                                                    <div class="price--output">
-                                                        <span>Price :</span><input type="text" id="amount" readonly>
-                                                    </div>
-                                                    <div class="price--filter">
-                                                        <!-- CHANGE THIS TO DROPDOWN for mobile @media tag -->
-                                                        <a href="shop-sidebar.html#">Filter</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
+                                <button class="filter-button" data-filter="all">$0-ALL</button>
+                                <button class="filter-button" data-filter="20">$0-$20</button>
+                                <button class="filter-button" data-filter="plus">$20+</button>
                             </div>
                             <!-- End Range -->
 
@@ -280,9 +252,10 @@
                                 <h4 class="section-title-4">PRODUCT CATEGORIES</h4>
                                 <!-- A multiple select element -->
                                 <label class="mdb-main-label">Label example</label>
-                                <button class="btn btn-default filter-button" data-filter="all">All</button>
-                                <button class="btn btn-default filter-button" data-filter="hdpe">organic</button>
-                                <button class="btn btn-default filter-button" data-filter="sprinkle">Sprinkle</button>
+                                <button class="filter-button" data-filter="all" data-title='Reset Filter'>All</button>
+                                <button class="filter-button" data-filter="hdpe"
+                                    title='Made with Organic Materials'>organic</button>
+                                <button class="filter-button" data-filter="sprinkle">Sprinkle</button>
 
                             </div>
 
@@ -358,23 +331,26 @@
                                                 <option>Rating</option>
                                             </select>
                                         </div>
+                                        <!--
                                         <div class="shp__pro__show">
                                             <span>Showing 1 - 4 of 25 results</span>
-                                        </div>
+                                        </div>-->
                                     </div>
                                     <!-- End Short Form -->
 
                                 </div>
                             </div>
                         </div>
+
                         <div class="row">
                             <div class="shop__grid__view__wrap">
 
                                 <!-- Start Single View -->
                                 <div role="tabpanel" id="grid-view"
                                     class="single-grid-view tab-pane fade in active clearfix">
+
                                     <!-- Start Single Product -->
-                                    <div class="col-md-3 col-lg-4 col-sm-4 col-xs-12 filter hdpe">
+                                    <div class="col-md-6 col-lg-3 col-sm-4 col-xs-12 filter hdpe plus">
                                         <div class="product">
                                             <div class="product__inner">
                                                 <div class="pro__thumb">
@@ -410,12 +386,12 @@
                                     <!-- End Single Product -->
 
                                     <!-- Start Single Product -->
-                                    <div class="col-md-3 col-lg-4 col-sm-4 col-xs-12 filter sprinkle">
+                                    <div class="col-md-6 col-lg-3 col-sm-4 col-xs-12 filter hdpe plus">
                                         <div class="product">
                                             <div class="product__inner">
                                                 <div class="pro__thumb">
                                                     <a href="shop-sidebar.html#">
-                                                        <img src="images/product/2.png" alt="product images">
+                                                        <img src="images/product/1.png" alt="product images">
                                                     </a>
                                                 </div>
                                                 <div class="product__hover__info">
@@ -445,13 +421,15 @@
                                     </div>
                                     <!-- End Single Product -->
 
+
+
                                     <!-- Start Single Product -->
-                                    <div class="col-md-3 col-lg-4 col-sm-4 col-xs-12 filter hdpe sprinkle">
+                                    <div class="col-md-6 col-lg-3 col-sm-4 col-xs-12 filter hdpe plus">
                                         <div class="product">
                                             <div class="product__inner">
                                                 <div class="pro__thumb">
                                                     <a href="shop-sidebar.html#">
-                                                        <img src="images/product/4.png" alt="product images">
+                                                        <img src="images/product/1.png" alt="product images">
                                                     </a>
                                                 </div>
                                                 <div class="product__hover__info">
@@ -471,8 +449,7 @@
                                                 </div>
                                             </div>
                                             <div class="product__details">
-                                                <h2><a href="product-details.html">Simple Black Clock hdpe +
-                                                        sprinkle</a></h2>
+                                                <h2><a href="product-details.html">Simple Black Clock</a></h2>
                                                 <ul class="product__price">
                                                     <li class="old__price">$16.00</li>
                                                     <li class="new__price">$10.00</li>
@@ -482,6 +459,43 @@
                                     </div>
                                     <!-- End Single Product -->
 
+
+
+                                    <!-- Start Single Product -->
+                                    <div class="col-md-6 col-lg-3 col-sm-4 col-xs-12 filter hdpe plus">
+                                        <div class="product">
+                                            <div class="product__inner">
+                                                <div class="pro__thumb">
+                                                    <a href="shop-sidebar.html#">
+                                                        <img src="images/product/1.png" alt="product images">
+                                                    </a>
+                                                </div>
+                                                <div class="product__hover__info">
+                                                    <ul class="product__action">
+                                                        <li><a data-toggle="modal" data-target="#productModal"
+                                                                title="Quick View"
+                                                                class="quick-view modal-view detail-link"
+                                                                href="shop-sidebar.html#"><span
+                                                                    class="ti-plus"></span></a></li>
+                                                        <li><a title="Add To Cart" href="cart.html"><span
+                                                                    class="ti-shopping-cart"></span></a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="add__to__wishlist">
+                                                    <a data-toggle="tooltip" title="Add To Wishlist" class="add-to-cart"
+                                                        href="wishlist.html"><span class="ti-heart"></span></a>
+                                                </div>
+                                            </div>
+                                            <div class="product__details">
+                                                <h2><a href="product-details.html">Simple Black Clock</a></h2>
+                                                <ul class="product__price">
+                                                    <li class="old__price">$16.00</li>
+                                                    <li class="new__price">$10.00</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End Single Product -->
 
                                 </div>
                                 <!-- End Single View -->
@@ -599,6 +613,7 @@
         <!-- End Footer Area -->
     </div>
     <!-- Body main wrapper end -->
+
     <!-- QUICKVIEW PRODUCT -->
     <div id="quickview-wrapper">
         <!-- Modal -->
@@ -691,6 +706,8 @@
             </div><!-- .modal-dialog -->
         </div>
         <!-- END Modal -->
+
+
     </div>
     <!-- END QUICKVIEW PRODUCT -->
     <!-- Placed js at the end of the document so the pages load faster -->
