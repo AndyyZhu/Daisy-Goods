@@ -186,17 +186,6 @@
     font-size: 20px;
     transition: all 0.3s ease 0s;
 }
-
-.product__action li:first-child::before {
-    background: #666666 none repeat scroll 0 0;
-    content: "";
-    height: 24px;
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 1px;
-}
 .product__action li {
     position: relative;
     width: 50%;
@@ -233,7 +222,7 @@
     color: #ff4136;
 }
 .product__details h2 {
-    color: #444444;
+    color: #999;
     font-size: 14px;
     font-weight: 500;
 }
@@ -481,12 +470,19 @@
     padding-right: 50px;
 }
 .product-info h1 {
-    font-size: 20px;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+.product-info h2 {
+    font-size: 24px;
     margin-bottom: 10px;
     text-transform: capitalize;
 }
 .rating__and__review {
     display: flex;
+    margin-top: 10px;
     margin-bottom: 15px;
 }
 .rating {
@@ -500,6 +496,8 @@
     margin-left: 3px;
 }
 .review a {
+    font-style: italic;
+    font-size: 18px;
     color: #999;
 }
 .s-price-box span.new-price {
@@ -518,9 +516,11 @@
     width: 50%;
 }
 .quick-desc {
+    font-size: 15px;
+    text-align: center;
     color: #999;
-    margin-bottom: 30px;
-    margin-top: 30px;
+    margin-bottom: 50px;
+    margin-top: 50px;
     width: 83%;
 }
 .select__color {
@@ -606,23 +606,31 @@ h3.widget-title-modal {
 .social-icons li a:hover {
     color: #ff4136;
 }
-.addtocart-btn {
-    margin-top: 66px;
-    text-align: left;
+.sustainability-box{
+    position: relative;
+    border-radius: 25px;
+    border: 5px solid #a9d072;
+    color: #999;
+    padding: 11px; 
+    width: 380px;
+    height: 150px;
+    margin-top: 20px;
+
 }
-.addtocart-btn a {
-    background: #333 none repeat scroll 0 0;
+.link-btn {
+    margin-top: 60px;
+}
+.link-btn a {
+    position: relative;
+    border-radius: 25px;
+    background: #a9d072;
     color: #fff;
-    display: inline-block;
-    font-size: 20px;
-    height: 60px;
-    line-height: 60px;
-    padding: 0 87px;
-    text-transform: capitalize;
-    transition: all 0.5s ease 0s;
+    padding: 20px; 
+    width: 380px;
+    height: 150px;
 }
-.addtocart-btn a:hover {
-    background: #ff4136 none repeat scroll 0 0;
+.link-btn a:hover {
+    background: #3bbd17 none repeat scroll 0 0;
     color: #fff;
 }
 
