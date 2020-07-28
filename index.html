@@ -882,61 +882,119 @@
                 </section>
             </div>
 
-            <!-- jquery latest version -->
-            <script src="home-assets/js/vendor/jquery-1.12.0.min.js"></script>
-            <!-- Bootstrap framework js -->
-            <script src="home-assets/js/bootstrap.min.js"></script>
-            <!-- All js plugins included in this file. -->
-            <script src="home-assets/js/plugins.js"></script>
-            <script src="home-assets/js/slick.min.js"></script>
-            <script src="home-assets/js/owl.carousel.min.js"></script>
-            <!-- Waypoints.min.js. -->
-            <script src="home-assets/js/waypoints.min.js"></script>
-            <!-- Main js file that contents all jQuery plugins activation. -->
-            <script src="home-assets/js/main.js"></script>
 
-            <script>
-                var numberPage = 3;
-            </script>
-            <script src="home-assets/js1/index.js"></script>
-            <script>
-                function getParameterByName(e, n) {
-                    n || (n = window.location.href), (e = e.replace(/[\[\]]/g, "\\$&"));
-                    var r = new RegExp("[?&]" + e + "(=([^&#]*)|&|#|$)").exec(n);
-                    return r
-                        ? r[2]
-                            ? decodeURIComponent(r[2].replace(/\+/g, " "))
-                            : ""
-                        : null;
-                }
-                /* Custom settings for notifications */
-                const action = getParameterByName("action"),
-                    stripe = getParameterByName("stripe"),
-                    body = document.body;
-                if (action == "subscribe") {
-                    body.classList.add("members-notification-subscribe");
-                }
-                if (action == "signin") {
-                    body.classList.add("members-notification-signin");
-                }
-                if (action == "signup") {
-                    body.classList.add("members-notification-signup");
-                }
-                if (stripe == "success") {
-                    body.classList.add("members-notification-checkout-success");
-                }
-            </script>
-            <script>
-                var initTyped = document.getElementById("ityped");
-                if (initTyped) {
-                    ityped.init(document.querySelector(".ityped-wrap"), {
-                        showCursor: true,
-                        typeSpeed: 150,
-                        startDelay: 500,
-                        backDelay: 5000,
-                    });
-                }
-            </script>
+
+            <!-- Start Footer Area -->
+            <footer class="htc__foooter__area"
+                style="background: rgba(0, 0, 0, 0) url(images/bg/1.jpg) no-repeat scroll center center / cover ;">
+                <div class="container">
+                    <div class="row">
+                        <div class="footer__container clearfix">
+                            <!-- Start Single Footer Widget -->
+                            <div class="col-md-3 col-lg-3 col-sm-6">
+                                <div class="ft__widget">
+                                    <div class="ft__logo">
+                                        <a href="index.html">
+                                            <img src="images/logo/logo.png" alt="footer logo">
+                                        </a>
+                                    </div>
+                                    <div class="footer__details">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Single Footer Widget -->
+                            <!-- Start Single Footer Widget -->
+                            <div class="col-md-3 col-lg-3 col-sm-6 smt-30 xmt-30">
+                                <div class="ft__widget contact__us">
+                                    <h2 class="ft__title">Contact Us</h2>
+                                    <div class="footer__inner">
+                                        <a href="mailto:daisyygoods@gmail.com">daisyygoods@gmail.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Single Footer Widget -->
+
+                        </div>
+                    </div>
+                    <!-- Start Copyright Area -->
+                    <div class="htc__copyright__area">
+                        <div class="row">
+                            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                                <div class="copyright__inner">
+                                    <div class="copyright">
+
+                                    </div>
+                                    <ul class="footer__menu">
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="shop-sidebar.html">Shop</a></li>
+                                        <li><a href="about.html">About Us</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Copyright Area -->
+                </div>
+            </footer>
+            <!-- End Footer Area -->
+
+        </div>
+
+        <!-- jquery latest version -->
+        <script src="home-assets/js/vendor/jquery-1.12.0.min.js"></script>
+        <!-- Bootstrap framework js -->
+        <script src="home-assets/js/bootstrap.min.js"></script>
+        <!-- All js plugins included in this file. -->
+        <script src="home-assets/js/plugins.js"></script>
+        <script src="home-assets/js/slick.min.js"></script>
+        <script src="home-assets/js/owl.carousel.min.js"></script>
+        <!-- Waypoints.min.js. -->
+        <script src="home-assets/js/waypoints.min.js"></script>
+        <!-- Main js file that contents all jQuery plugins activation. -->
+        <script src="home-assets/js/main.js"></script>
+
+        <script>
+            var numberPage = 3;
+        </script>
+        <script src="home-assets/js1/index.js"></script>
+        <script>
+            function getParameterByName(e, n) {
+                n || (n = window.location.href), (e = e.replace(/[\[\]]/g, "\\$&"));
+                var r = new RegExp("[?&]" + e + "(=([^&#]*)|&|#|$)").exec(n);
+                return r
+                    ? r[2]
+                        ? decodeURIComponent(r[2].replace(/\+/g, " "))
+                        : ""
+                    : null;
+            }
+            /* Custom settings for notifications */
+            const action = getParameterByName("action"),
+                stripe = getParameterByName("stripe"),
+                body = document.body;
+            if (action == "subscribe") {
+                body.classList.add("members-notification-subscribe");
+            }
+            if (action == "signin") {
+                body.classList.add("members-notification-signin");
+            }
+            if (action == "signup") {
+                body.classList.add("members-notification-signup");
+            }
+            if (stripe == "success") {
+                body.classList.add("members-notification-checkout-success");
+            }
+        </script>
+        <script>
+            var initTyped = document.getElementById("ityped");
+            if (initTyped) {
+                ityped.init(document.querySelector(".ityped-wrap"), {
+                    showCursor: true,
+                    typeSpeed: 150,
+                    startDelay: 500,
+                    backDelay: 5000,
+                });
+            }
+        </script>
 
     </body>
 
