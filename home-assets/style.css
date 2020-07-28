@@ -426,7 +426,7 @@
 }
 .bradcaump-title {
     color: #343434;
-    font-size: 36px;
+    font-size: 100px;
     font-weight: 400;
     line-height: 30px;
     text-transform: capitalize;
@@ -952,11 +952,11 @@ h3.widget-title-modal {
 }
 .feature__details {
     bottom: 40px;
-    left: 40px;
+    left: 70px;
     position: absolute;
 }
 .feature__details h4 {
-    color: #999;
+    color: #FFF;
     font-size: 22px;
     text-transform: capitalize;
 }
